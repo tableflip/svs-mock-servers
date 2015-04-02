@@ -17,7 +17,9 @@ module.exports = function (opts, cb) {
                  '<soap:Body>' +
                    '<Search06bResponse xmlns="urn:callcredit.co.uk/soap:callmlapi6">' +
                      '<Search06bResult xmlns="urn:callcredit.co.uk/soap:callmlapi6">' +
-                       '<appverified xmlns="urn:callcredit.co.uk/soap:callmlapi6">' + appverified + '</appverified>' +
+                       '<results>' +
+                         '<appverified xmlns="urn:callcredit.co.uk/soap:callmlapi6">' + appverified + '</appverified>' +
+                       '</results>' +
                      '</Search06bResult>' +
                    '</Search06bResponse>' +
                  '</soap:Body>' +
